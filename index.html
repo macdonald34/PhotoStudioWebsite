@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VineYard Photo Studio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VineYard Photo Studio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Capturing Moments, Creating Memories</h2>
+            <button onclick="window.location.href='#portfolio'">View Portfolio</button>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Us</h2>
+        <p>Welcome to VineYard Studio. We specialize in capturing beautiful moments...</p>
+    </section>
+
+    <section id="portfolio" class="container">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Photo 1" onclick="openLightbox();currentSlide(1)">
+            <img src="photo2.jpg" alt="Photo 2" onclick="openLightbox();currentSlide(2)">
+            <img src="photo3.jpg" alt="Photo 3" onclick="openLightbox();currentSlide(3)">
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <h2>Services</h2>
+        <p>We offer a variety of photography services...</p>
+            <ul>Wedding Shoots</ul>
+            <ul>Graduation Shoots</ul>
+            <ul>Wrap Shoots</ul>
+            <ul>Videography</ul>
+            <ul>Baby Shoots</ul>
+        
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Photo Studio. All rights reserved.</p>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-slide" src="photo1.jpg" alt="Photo 1">
+            <img class="lightbox-slide" src="photo2.jpg" alt="Photo 2">
+            <img class="lightbox-slide" src="photo3.jpg" alt="Photo 3">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
