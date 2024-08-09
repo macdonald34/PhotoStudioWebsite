@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 1.2px;
+    width: 100%;
+}
+
+nav {
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e91e63;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px; /* Adjust for navbar height */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero button {
+    position: relative;
+    z-index: 2;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #c2185b;
+    transform: translateY(-3px);
+}
+
+/* Section Styling */
+section.container {
+    padding: 80px 0;
+}
+
+/* Sign-Up Screen */
+.sign-up-screen {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.sign-up-screen h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.sign-up-screen form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sign-up-screen .input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sign-up-screen .input-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.sign-up-screen .input-group input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.sign-up-screen .sign-up-btn, .google-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up-screen .sign-up-btn:hover, .google-btn:hover {
+    background-color: #333;
+}
+
+.sign-up-screen .google-btn {
+    background-color: #db4437;
+    margin-top: 10px;
+}
+
+.sign-up-screen p {
+    margin-top: 20px;
+    color: #666;
+}
+
+.sign-up-screen p a {
+   
